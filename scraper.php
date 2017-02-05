@@ -2,7 +2,7 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';  
     
-    $pageurl = "http://feedback.ebay.co.uk/ws/eBayISAPI.dll?ViewFeedback2&ftab=AllFeedback&userid=sal1914&iid=-1&de=off&items=200&interval=365&which=all&mPg=76&page=1";
+    $pageurl = "http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&ftab=AllFeedback&userid=offroadbelts&iid=-1&de=off&interval=0&searchInterval=30&items=200&searchInterval=30";
     $html = scraperWiki::scrape($pageurl);                    
     $dom = new simple_html_dom();
     $dom->load($html);
@@ -54,7 +54,7 @@ require 'scraperwiki/simple_html_dom.php';
 
         # Load the next page via cURL
 
-        $pageurl = "http://feedback.ebay.co.uk/ws/eBayISAPI.dll?ViewFeedback2&ftab=AllFeedback&userid=sal1914&iid=-1&de=off&items=200&interval=365&which=all&mPg=76&page=".$page;
+        $pageurl = "http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&ftab=AllFeedback&userid=offroadbelts&iid=-1&de=off&items=200&interval=0&searchInterval=30&mPg=172&page=".$page;
                         
         $html = scraperWiki::scrape($pageurl);                    
         $dom = new simple_html_dom();
