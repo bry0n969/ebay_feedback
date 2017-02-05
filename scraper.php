@@ -1,4 +1,5 @@
 <?php
+require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';  
     
     $pageurl = "http://feedback.ebay.co.uk/ws/eBayISAPI.dll?ViewFeedback2&ftab=AllFeedback&userid=sal1914&iid=-1&de=off&items=200&interval=365&which=all&mPg=76&page=1";
