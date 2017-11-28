@@ -2,7 +2,7 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';  
     
-    $pageurl = "http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&ftab=AllFeedback&userid=offroadbelts&iid=-1&de=off&interval=0&searchInterval=30&items=200&searchInterval=30";
+    $pageurl = "http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&ftab=FeedbackLeftForOthers&userid=offroadbelts&iid=-1&de=off&interval=0&searchInterval=30&items=200&searchInterval=30";
     $html = scraperWiki::scrape($pageurl);                    
     $dom = new simple_html_dom();
     $dom->load($html);
